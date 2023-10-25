@@ -55,15 +55,15 @@ class CalculatorCore:
         choice = input("Enter your choice: ")
 
         if choice == '1':
-            self._change_decimal_places()
+            self.change_decimal_places()
         elif choice == '2':
-            self._toggle_memory_function()
+            self.toggle_memory_function()
         elif choice == '3':
             return
         else:
             print("Invalid choice. Please enter a number between 1 and 3.")
 
-    def _change_decimal_places(self):
+    def change_decimal_places(self):
         try:
             places = int(input("Enter number of decimal places (0-10): "))
             if 0 <= places <= 10:
@@ -74,8 +74,7 @@ class CalculatorCore:
         except ValueError:
             print("Invalid input. Please enter a number between 0 and 10.")
 
-    def _toggle_memory_function(self):
+    def toggle_memory_function(self):
         self.settings["use_memory"] = not self.settings["use_memory"]
         status = "enabled" if self.settings["use_memory"] else "disabled"
         print(f"Memory function is now {status}.")
-
