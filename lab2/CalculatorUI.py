@@ -63,6 +63,3 @@ class CalculatorUI(CalculatorCore):
                 self.change_settings()
             elif user_choice == '4':
                 break
-
-
-# Now, you can instantiate CalculatorUI and call run_calculator method.
