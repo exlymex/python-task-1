@@ -1,4 +1,4 @@
-from lab2.CalculatorCore import CalculatorCore
+from BLL.lab2.CalculatorCore import CalculatorCore
 
 
 class CalculatorUI(CalculatorCore):
